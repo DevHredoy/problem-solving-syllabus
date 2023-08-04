@@ -17,11 +17,11 @@ public class rough {
         //once j reaches side by side to pivot , the loop will end and it will return the posi
         // tion of the pivot
         //
-        int pivot=arr[high-1];
+        int pivot=arr[high];
         int i=low-1;
 
 
-        for(int j=0;j<high-2;j++)
+        for(int j=low;j<high;j++)
         {
 
             if(arr[j]<pivot)
@@ -39,8 +39,8 @@ public class rough {
         }
 
            int var=arr[i+1];
-        arr[i+1]=pivot;
-        arr[arr.length-1]=var;
+        arr[i+1]=arr[high];
+        arr[high]=var;
 
        return i+1;
     }
@@ -60,10 +60,12 @@ public class rough {
 
             //all the code will be inside a condition which is low<high
 
-            int initPivotPosition=findPosForPivot(arr,high,low);
+
             if(low<high)
             {
+                int initPivotPosition=findPosForPivot(arr,high,low);
                 sortManager(arr,initPivotPosition-1,low);
+                sortManager(arr, arr.length-1,initPivotPosition+1);
 
 
             }
@@ -96,4 +98,4 @@ public class rough {
 
 
 
-}
+
