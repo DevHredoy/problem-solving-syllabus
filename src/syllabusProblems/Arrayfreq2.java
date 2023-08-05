@@ -1,6 +1,4 @@
 package syllabusProblems;
-
-
 import java.util.TreeSet;
 
 /*Geek hosted a coding competition, some of the questions were easy and some of them were hard. You are given an array arr of positive integers of size N and an integer K, arr[i] represents the hardness of each problem of geeks' contest. Among those N numbers, your task is to find the numbers which appear more than K times and print them in increasing order. If no number appears more than K times then print -1.
@@ -41,9 +39,9 @@ public class Arrayfreq2 {
 
 
 
-        for(int l:c)
+        for(int l=0;l<c.length;l++)
         {
-            if(maxNum<l)
+            if(maxNum<c[l])
             {
                //in the line below we have to take the index of c array like c[i],take i then add one with i then adding in Treeset
                 l=l+1;
@@ -56,7 +54,7 @@ public class Arrayfreq2 {
 
 
         //int[] numbersArray=numbers.toArray(new int[numbers.size()]);
-
+        // there is a scope to reduce the code block through
         int[] intArray = new int[numbers.size()];
         int index = 0;
         for (int num : numbers) {
@@ -74,13 +72,11 @@ public class Arrayfreq2 {
     }
 
     public static void main(String[] args) {
-        int[] inputArray={4,8,8,3,8,2,8,4,3};
+        int[] inputArray={4,4,2,1,4,9,3,8,4,3};
 
         printArray(buildArray(inputArray,9,3));
 
 
     }
-
-
 
 }
