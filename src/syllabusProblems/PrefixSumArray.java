@@ -19,6 +19,11 @@ public class PrefixSumArray {
        }
    }
 
+
+
+
+
+
 int sum=0;
 
    int[] findSum(int[] arr,int len)
@@ -35,7 +40,9 @@ int sum=0;
 
        if()
        {
-           sum=arr[len]+findSum(arr,len-1);
+
+           findSum(arr,len-1);
+           //sum=arr[len]+findSum(arr,len-1);
 
        }
 
