@@ -31,16 +31,19 @@ public class TwoDArrDemo {
 
         for(int i=0;i<arr.length;i++)
         {
-            for(int j=0;j<arr[j].length;j++)
+            for(int j=0;j<arr[i].length;j++)
 
             {
                if(1<=j)
-               {    int word=arr[j];
-                   arr[j]=arr[j-1]+arr[j];
-
+               {
+                   arr[i][j]=arr[i][j-1]+arr[i][j];
+                   System.out.println(arr[i][j]);
 
                }
+                 else{
+                   System.out.println(arr[i][j]);
 
+               }
 
             }
 
@@ -60,7 +63,7 @@ public class TwoDArrDemo {
 
 
         int[][] z=new int[][]{{11,22,33,44},{11,22,33,44}};
-        printArray(z);
+        modifiedArr(z);
 
     }
 
