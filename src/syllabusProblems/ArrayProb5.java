@@ -5,7 +5,10 @@ import java.io.*;
 
 public class ArrayProb5 {
 
-  /*  Given an array with N distinct elements, convert the given array to a form where all elements are in the range from 0 to N-1. The order of elements is the same, i.e., 0 is placed in the place of the smallest element, 1 is placed for the second smallest element, … N-1 is placed for the largest element.
+  /*  Given an array with N distinct elements, convert the given array to a form where
+   all elements are in the range from 0 to N-1. The order of elements is the same,
+   i.e., 0 is placed in the place of the smallest element,
+   1 is placed for the second smallest element, … N-1 is placed for the largest element.
 
         Input:  arr[] = {10, 40, 20}
     Output: arr[] = {0, 2, 1}
@@ -40,6 +43,9 @@ public class ArrayProb5 {
 
                 // Update the result at minimum index element
                 // with new Position
+
+               //in the result array in the position of the minimum
+                // element 0 is stored
                 result[idx] = currPos;
 
                 // Increment the new position
@@ -75,6 +81,7 @@ public class ArrayProb5 {
 
             System.out.println("\n\nConverted Array is");
             printArr(result);
+            printArr(arr);
         }
     }
 
