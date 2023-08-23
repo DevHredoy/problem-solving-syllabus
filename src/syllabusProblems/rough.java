@@ -2,21 +2,64 @@ package syllabusProblems;
 
 public class rough {
 
+   //  arrayProb5
+static int[]  modifyList(int[] array)
 
-    // arrayProb5
 
+    {
+
+        int[] newArray=new int[array.length];
+        int maxNumber=12222333;
+        int levelOfNum=0;
+
+
+
+
+             int u=0;
+                      for(int j=0;j<array.length;j++) {
+                          int assumedsmall=maxNumber;
+                          for (int i = 0; i < array.length; i++) {
+                              if (array[i] < assumedsmall) {
+
+                                  assumedsmall = array[i];
+                                    u=i;
+                              }
+
+                          }
+                          newArray[u] = levelOfNum;
+                          array[u] = maxNumber;
+                          levelOfNum++;
+
+                          //in u position levelOfNumbersvalue will be place
+                          // the lowest will be replaced with maxnumber
+                          //the level will be incremented by one
+                      }
+   return newArray;
+
+    }
+
+
+
+
+
+
+    static void printArray(int arr[])
+        {
+            int n = arr.length;
+            for (int i=0; i<n; i++)
+                System.out.print(arr[i]+" ");
+            System.out.println();
+        }
 
     public static void main(String[] args) {
 
-        //the given array will be traversed and lowest element would be
-        //picked the position will be identified
-        //in the result array in that position 0 will be added
-        // at the end in the main array position of lowest will be
-        // replaced by the biggest number.
-        //2nd iteration again the lowest number will be looked
-        // if found in the corresponding index of result array
-        //1 will be placed. and in main array the lowest number will be
-        //replaced by max number
+
+            int[] array=new int[]{11,1,56,8,19,60,20};
+             printArray(modifyList(array));
+
+
+
+
 
 
 
