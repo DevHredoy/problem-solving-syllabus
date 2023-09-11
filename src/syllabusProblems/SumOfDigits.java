@@ -1,4 +1,8 @@
 package syllabusProblems;
+
+////✔✔
+
+
 //sum up until n
 public class SumOfDigits {
     // in this block the main function

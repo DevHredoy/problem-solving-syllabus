@@ -1,6 +1,6 @@
 package syllabusProblems;
 import java.util.TreeSet;
-
+//✔✔
 /*Geek hosted a coding competition, some of the questions were easy and some of them were hard. You are given an array arr of positive integers of size N and an integer K, arr[i] represents the hardness of each problem of geeks' contest. Among those N numbers, your task is to find the numbers which appear more than K times and print them in increasing order. If no number appears more than K times then print -1.
 
         Example:

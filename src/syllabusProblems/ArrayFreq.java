@@ -1,4 +1,9 @@
 package syllabusProblems;
+
+////✔✔
+
+
+
 //N = 5
 //        arr[] = {2, 3, 2, 3, 5}
 //        P = 5
