@@ -2,7 +2,7 @@ package syllabusProblems;
 
 import java.util.*;
 import java.io.*;
-
+//  ✔✔
 public class ArrayProb5 {
 
   /*  Given an array with N distinct elements, convert the given array to a form where
