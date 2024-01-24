@@ -62,10 +62,11 @@ public class TwoDArrDemo {
     public static void main(String[] args) {
 
 
-        int[][] z=new int[][]{{11,22,33,44},{11,22,33,44}};
+        int[][] z=new int[][]{{11,22,33,44},{1,22,33,44}};
         modifiedArr(z);
 
     }
+
 
 
 

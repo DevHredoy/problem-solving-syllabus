@@ -11,6 +11,7 @@ package syllabusProblems;
 
 public class SlidingWind {
 
+/*
 
 
     int[] windowSum(int range,int[] array)
@@ -33,5 +34,6 @@ public class SlidingWind {
 
 
 
+*/
 
 }
